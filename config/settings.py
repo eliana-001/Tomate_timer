@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'metas',
     'temporizador',
     'usuarios',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [

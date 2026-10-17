@@ -1,0 +1,52 @@
+@import url(/static/css/base.css);
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.8rem 2rem;
+    border-bottom: 4px solid var(--verde);
+}
+
+.nav img {
+    width: 70px;
+    height: 70px;
+}
+
+.nav__title {
+    font-size: 2rem;
+    color: var(--rojo);
+    font-weight: 700;
+    margin-right: auto;
+    font-family: "Unkempt", cursive;
+    font-style: normal;
+
+}
+
+.nav a {
+    color: var(--verde);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: var(--rojo);
+}
+
+.nav__button {
+    background-color: var(--rojo);
+    color: var(--crema);
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nav__button:hover {
+    background-color: var(--vino);
+
+}

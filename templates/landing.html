@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Tomate Timer{% endblock %}
+
+{% block content %}
+<main>
+    <h1>Bienvenido a Tomate Timer</h1>
+    <p>¡Comienza a usar Tomate Timer ahora!</p>
+    <p>tomate timer es una herramienta simple y efectiva para ayudarte a gestionar tu tiempo de forma más productiva.</p>
+    <p>Con tomate timer, puedes establecer temporizadores para tus tareas y descansos, lo que te permite mantener un enfoque constante y evitar distracciones.</p>
+    <p>¡Empieza a usar tomate timer hoy mismo y mejora tu productividad!</p>
+        <a href="{% url 'timer' %}" class="nav__button">Ir al temporizador</a>
+</main>
+<body>
+    <divclass="tarjeta"> 
+        <p>¿a que podes acceder si te logueas?</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Personalización</h2>
+                <p>Puedes personalizar los tiempos de trabajo y descanso según tus necesidades.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'images/timer.png' %}" alt="Imagen del temporizador" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Seguimiento de Progreso</h2>
+                <p>Puedes rastrear tu progreso y estadísticas de productividad a lo largo del tiempo.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'images/progress.png' %}" alt="Imagen del seguimiento de progreso" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Tablon de apoyo</h2>
+                <p>Puedes publicar tus ideas y recordatorios en el tablón de apoyo. (o tambien la foto de tu mayor motivacional)</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'images/board.png' %}" alt="Imagen del tablón de apoyo" class="img-fluid">
+            </div>
+        </div>
+       <p> todas las opciones de arriba son para los usuarios registrados, si no estas registrado no podras acceder a ellas, pero si te registras podras acceder a todas las opciones y mas.
+        aparte que es gratis ;) </p>
+    </divclass>
+    
+{% endblock %}

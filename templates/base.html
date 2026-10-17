@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Tomate Timer{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navar.css' %}">
     {% block extra_css %}{% endblock %}
 </head>
 <body>
+    {% include 'partials/navar.html' %}
     {% block content %}{% endblock %}
     {% block extra_js %}{% endblock %}
 </body>
